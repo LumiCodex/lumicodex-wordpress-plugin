@@ -5,3 +5,7 @@
 .agents/
 AGENTS.md
 CLAUDE.md
+
+# Local build output from bin/build-zip.sh (release zips are attached to
+# GitHub Releases by the release workflow, not committed).
+/build/
