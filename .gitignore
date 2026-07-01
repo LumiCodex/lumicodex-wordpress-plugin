@@ -1,0 +1,7 @@
+# Internal AI-agent tooling (symlinks into private sibling repos, and
+# workspace-only instructions; not relevant to the plugin and not meant
+# to be public).
+.claude/
+.agents/
+AGENTS.md
+CLAUDE.md
