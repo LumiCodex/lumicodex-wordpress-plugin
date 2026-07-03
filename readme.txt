@@ -4,7 +4,7 @@ Tags: lumicodex, web components, albums, embed, block editor
 Requires at least: 5.8
 Tested up to: 7.0
 Requires PHP: 7.2
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,6 +71,9 @@ Use `lca_api_base_url`, `lca_coreui_base_url`, and `lca_legacy_base_url` to over
 Use `lca_lumicodex_admin_app_url`, `lca_admin_app_script_url`, `lca_admin_app_style_url`, `lca_lumicodex_terms_url`, `lca_lumicodex_privacy_url`, `lca_admin_font_inter_url`, and `lca_admin_material_symbols_url` to override related external links.
 
 == Changelog ==
+
+= 1.0.1 =
+* Point the WordPress admin link to the hosted LumiCodex admin application.
 
 = 1.0.0 =
 * Add LumiCodex admin menu page.

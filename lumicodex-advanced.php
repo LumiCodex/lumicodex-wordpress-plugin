@@ -3,7 +3,7 @@
  * Plugin Name:       LumiCodex Advanced Embed Manager
  * Plugin URI:        https://www.lumicodex.com/
  * Description:       Adds LumiCodex admin tools, an album picker for pages, and frontend support for legacy and lc-embed web components.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 5.8
  * Tested up to:      7.0
  * Requires PHP:      7.2
@@ -25,7 +25,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('LCA_VERSION', '1.0.0');
+define('LCA_VERSION', '1.0.1');
 define('LCA_LEGACY_VERSION', '0.9.5');
 define('LCA_COREUI_VERSION', '1.0.0');
 
@@ -50,7 +50,7 @@ define('LCA_PROPRIETARY_ASSETS_NOTICE', 'LumiCodex service APIs, hosted applicat
 define('LCA_LUMICODEX_SITE_URL', 'https://www.lumicodex.com/');
 define('LCA_LUMICODEX_TERMS_URL', 'https://www.lumicodex.com/terms/');
 define('LCA_LUMICODEX_PRIVACY_URL', 'https://www.lumicodex.com/privacy/');
-define('LCA_LUMICODEX_ADMIN_APP_URL', 'https://www.lumicodex.com/');
+define('LCA_LUMICODEX_ADMIN_APP_URL', 'https://www.lumicodex.com/admin/index');
 define('LCA_ADMIN_APP_SCRIPT_URL', '');
 define('LCA_ADMIN_APP_STYLE_URL', '');
 define('LCA_LEGACY_BASE_URL', 'https://fast-images-eu.lumicodex.com/lumicodex/0.9.5');
