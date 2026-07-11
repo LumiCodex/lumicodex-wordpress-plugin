@@ -4,7 +4,7 @@ Tags: lumicodex, web components, albums, embed, block editor
 Requires at least: 5.8
 Tested up to: 7.0
 Requires PHP: 7.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,12 +15,13 @@ Adds LumiCodex admin tools, a published-album picker for the block editor, and f
 This advanced plugin includes:
 
 * A WordPress admin menu page at LumiCodex that links to, or loads, the hosted LumiCodex admin panel.
-* A block editor sidebar picker that lists only published albums.
-* Insert buttons for raw `<lc-embed>` markup and `[lumicodex_embed]` shortcodes.
+* A LumiCodex Album block available from the normal block inserter.
+* A visual grid of published albums with cover images and photo counts.
+* A live album preview in the editor after selection.
 * Conditional frontend loading for the CoreUI `lc-embed` bundle.
 * Backward-compatible loading for legacy `lumicodex-*` components and `[lumicodex_generic_media_view]`.
 
-The editor picker uses the same browser localStorage authentication as the admin panel. Sign in from the LumiCodex admin page first, then open a page or post and use the LumiCodex albums sidebar.
+Add the LumiCodex Album block to a post, choose an album from the visual picker, and publish. The block handles the embed automatically; authors do not need to work with web-component markup or shortcodes. If needed, Choose Connect LumiCodex in the block or plugin page. A hosted LumiCodex popup handles sign-in, account creation, OTP/MFA, and consent. It returns a short-lived PKCE authorization code to this WordPress origin; access and refresh tokens are never placed in URLs or sent through cross-origin messages.
 
 == License Scope ==
 
@@ -71,6 +72,11 @@ Use `lca_api_base_url`, `lca_coreui_base_url`, and `lca_legacy_base_url` to over
 Use `lca_lumicodex_admin_app_url`, `lca_admin_app_script_url`, `lca_admin_app_style_url`, `lca_lumicodex_terms_url`, `lca_lumicodex_privacy_url`, `lca_admin_font_inter_url`, and `lca_admin_material_symbols_url` to override related external links.
 
 == Changelog ==
+
+= 1.0.2 =
+* Add secure popup-based PKCE connection from the plugin page and block editor.
+* Add browser-local connection status and disconnect controls.
+* Add a native LumiCodex Album block with a visual album picker and live editor preview.
 
 = 1.0.1 =
 * Point the WordPress admin link to the hosted LumiCodex admin application.
