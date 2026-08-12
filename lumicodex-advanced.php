@@ -3,7 +3,7 @@
  * Plugin Name:       LumiCodex Advanced Embed Manager
  * Plugin URI:        https://www.lumicodex.com/
  * Description:       Adds LumiCodex admin tools, an album picker for pages, and frontend support for legacy and lc-embed web components.
- * Version:           1.0.2
+ * Version:           1.1.0
  * Requires at least: 5.8
  * Tested up to:      7.0
  * Requires PHP:      7.2
@@ -25,9 +25,9 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('LCA_VERSION', '1.0.2');
+define('LCA_VERSION', '1.1.0');
 define('LCA_LEGACY_VERSION', '0.9.5');
-define('LCA_COREUI_VERSION', '1.0.0');
+define('LCA_COREUI_VERSION', '2.0.0');
 
 /*
  * License boundaries.
@@ -43,9 +43,9 @@ define('LCA_PROPRIETARY_ASSETS_NOTICE', 'LumiCodex service APIs, hosted applicat
 /*
  * External LumiCodex links.
  *
- * Replace these defaults with the final production URLs before release. They
- * are centralized here so the external service boundary is visible and easy to
- * audit. The related filters below may also override them at runtime.
+ * These defaults are the production URLs. They are centralized here so the
+ * external service boundary is visible and easy to audit. The related filters
+ * below may override them at runtime.
  */
 define('LCA_LUMICODEX_SITE_URL', 'https://www.lumicodex.com/');
 define('LCA_LUMICODEX_TERMS_URL', 'https://www.lumicodex.com/terms/');
@@ -53,8 +53,8 @@ define('LCA_LUMICODEX_PRIVACY_URL', 'https://www.lumicodex.com/privacy/');
 define('LCA_LUMICODEX_ADMIN_APP_URL', 'https://www.lumicodex.com/admin/index');
 define('LCA_ADMIN_APP_SCRIPT_URL', '');
 define('LCA_ADMIN_APP_STYLE_URL', '');
-define('LCA_LEGACY_BASE_URL', 'https://fast-images-eu.lumicodex.com/lumicodex/0.9.5');
-define('LCA_COREUI_BASE_URL', 'https://fast-images-eu.lumicodex.com/lumicodex/1.0.0');
+define('LCA_LEGACY_BASE_URL', 'https://edge.lumicodex.fast/lumicodex/0.9.5');
+define('LCA_COREUI_BASE_URL', 'https://edge.lumicodex.fast/lumicodex/2.0.0');
 define('LCA_API_BASE_URL', 'https://api.lumicodex.com/');
 define('LCA_ADMIN_FONT_INTER_URL', 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 define('LCA_ADMIN_MATERIAL_SYMBOLS_URL', 'https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0');

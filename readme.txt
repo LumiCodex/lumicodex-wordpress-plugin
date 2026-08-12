@@ -4,7 +4,7 @@ Tags: lumicodex, web components, albums, embed, block editor
 Requires at least: 5.8
 Tested up to: 7.0
 Requires PHP: 7.2
-Stable tag: 1.0.2
+Stable tag: 1.1.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,7 +35,8 @@ See `LICENSES.md` for the file-level licensing inventory.
 
 This plugin connects to LumiCodex services to authenticate users, list albums, upload/manage media, publish albums, and load frontend web components used to render LumiCodex embeds.
 
-The final production URLs should be configured in `lumicodex-advanced.php` before release:
+The production service URLs are centralized in `lumicodex-advanced.php` and can
+be overridden with the documented filters:
 
 * `LCA_LUMICODEX_SITE_URL`
 * `LCA_LUMICODEX_TERMS_URL`
@@ -72,6 +73,10 @@ Use `lca_api_base_url`, `lca_coreui_base_url`, and `lca_legacy_base_url` to over
 Use `lca_lumicodex_admin_app_url`, `lca_admin_app_script_url`, `lca_admin_app_style_url`, `lca_lumicodex_terms_url`, `lca_lumicodex_privacy_url`, `lca_admin_font_inter_url`, and `lca_admin_material_symbols_url` to override related external links.
 
 == Changelog ==
+
+= 1.1.0 =
+* Load CoreUI 2.0.0 and frozen legacy 0.9.5 assets from the Cloudflare edge host.
+* Keep the existing CoreUI and legacy base-URL filters for controlled overrides.
 
 = 1.0.2 =
 * Add secure popup-based PKCE connection from the plugin page and block editor.
